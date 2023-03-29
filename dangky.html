@@ -3,106 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/vnd.microsoft.icon">
-  <title>Đăng Ký Thành Viên</title>
+
+  <!-- style -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- font awesome local-->
+  <!-- <link rel="stylesheet" href="./assets/fontawesome/css/all.css"> -->
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css">
+  <title>Đăng ký</title>
 </head>
 <body>  
   <header>
-    <p>
-      <img src="./assets/img/logo.png" alt="Logo">
-    </p>
+    <img src="./assets/img/logo.png" alt="Logo" id="logo">
+
+    <img src="./assets/img/header-img1.png" alt="" class="header-img header-img1">
+    <img src="./assets/img/header-img2.png" alt="" class="header-img header-img2">
+    <img src="./assets/img/header-img3.png" alt="" class="header-img header-img3">
 
     <nav>
-      <ul>
-        <a href="./trangchu.html">Trang Chủ</a>
+      <div>
+        <a href="./index.html">Trang Chủ</a>
         <a href="./gioithieu.html">Giới Thiệu</a>
         <a href="./sanpham.html">Sản Phẩm</a>
         <a href="./tintuc.html">Tin Tức</a>
         <a href="./dangnhap.html">Đăng Nhập</a>
         <a href="./dangky.html">Đăng Ký</a>
         <a href="./lienhe.html">Liên Hệ</a>
-      </ul>
-    </nav>
+      </div>
 
+      <div>
+        <input type="text" placeholder="Nhập nội dung cần tìm...">
+        <i class="nav-search-icon fa-solid fa-search"></i>
+        <i class="nav-cart-icon fa-solid fa-shopping-cart"></i>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <fieldset>
-      <legend>ĐĂNG KÝ</legend>
-      <form action="" method="post" enctype="multipart/form-data">
-        <table>
-          <tr>
-            <td>
-              <label for="email">Email</label>
-            </td>
-            <td>
-              <input type="text" name="email" id="email" placeholder="Vui lòng nhập email">
-            </td>
-          </tr>
+    <h1>ĐĂNG KÝ</h1>
+    <form action="" method="post" enctype="multipart/form-data" class="register-form">
+      <table class="mx-auto">
+        <tr>
+          <td>
+            <label for="email">
+              <span class="label-icon"><i class="fa-regular fa-envelope"></i></span>
+            </label>
+          </td>
+          <td>
+            <input type="text" name="email" id="email" placeholder="Vui lòng nhập email">
+          </td>
+        </tr>
 
-          <tr>
-            <td>
-              <label for="psw">Mật Khẩu</label>
-            </td>
-            <td>
-              <input type="password" name="psw" id="psw" placeholder="Vui lòng nhập mật khẩu">
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <label for="psw">
+              <span class="label-icon"><i class="fa-solid fa-unlock-keyhole"></i></span>
+            </label>
+          </td>
+          <td>
+            <input type="password" name="psw" id="psw" placeholder="Vui lòng nhập mật khẩu">
+          </td>
+        </tr>
 
-          <tr>
-            <td>
-              <label for="psw1">Nhập lại mật khẩu</label>
-            </td>
-            <td>
-              <input type="password" name="psw1" id="psw1" placeholder="Vui lòng nhập mật khẩu">
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <label for="psw1">
+              <span class="label-icon"><i class="fa-solid fa-unlock-keyhole"></i></span>
+            </label>
+          </td>
+          <td>
+            <input type="password" name="psw1" id="psw1" placeholder="Vui lòng nhập mật khẩu">
+          </td>
+        </tr>
 
-          <tr>
-            <td>
-              <label for="">Cấp độ thành viên</label>
-            </td>
-            <td>
-              <input type="radio" name="memberType" id="silver" value="silver">
-              <label for="silver">Bạc</label>
+        <tr>
+          <td>
+            <label for="">
+              <span class="label-icon"><i class="fa-solid fa-layer-group"></i></span>
+            </label>
+          </td>
+          <td>
+            <input type="radio" name="memberType" id="silver" value="silver">
+            <label for="silver">Bạc</label>
 
-              <input type="radio" name="memberType" id="gold" value="gold">
-              <label for="gold">Vàng</label>
+            <input type="radio" name="memberType" id="gold" value="gold">
+            <label for="gold">Vàng</label>
 
-              <input type="radio" name="memberType" id="platinum" value="platinum">
-              <label for="platinum">Bạch Kim</label>
-            </td>
-          </tr>
+            <input type="radio" name="memberType" id="platinum" value="platinum">
+            <label for="platinum">Bạch Kim</label>
+          </td>
+        </tr>
 
-          <tr>
-            <td>
-              <label for="avatar">Ảnh đại diện</label>
-            </td>
-            <td>
-              <input type="file" name="avatar" id="avatar" accept=".jpg, .png, .jpeg">
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <label for="avatar">
+              <span class="label-icon"><i class="fa-solid fa-user-tie"></i></span>
+            </label>
+          </td>
+          <td>
+            <input type="file" name="avatar" id="avatar" accept=".jpg, .png, .jpeg">
+          </td>
+        </tr>
 
-          <tr>
-            <td colspan="2">
-              <p>Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều khoản & Quyền riêng tư của chúng tôi</a>.</p>
-            </td>
-          </tr>
+        <tr>
+          <td colspan="2">
+            <p>Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều khoản & Quyền riêng tư của chúng tôi</a>.</p>
+          </td>
+        </tr>
 
-          <tr>
-            <td colspan="2">
-              <input type="reset" value="Hủy">
-              <input type="submit" value="Đăng Ký">
-            </td>
-          </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Đăng Ký">
+            <input type="reset" value="Hủy">
+          </td>
+        </tr>
 
-        </table>
-      </form>
-    </fieldset>
+      </table>
+    </form>
   </main>
 
   <footer>
-    <p>© 2021 Bản quyền thuộc về FreeezeVN. <a href="">facebook</a> <a href="">twitter</a> <a href="">pinterest</a> <a href="#">Về Đầu Trang</a></p>
+    <p>
+      © 2021 Bản quyền thuộc về FreeezeVN.
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-pinterest"></i></a>
+    </p>
+    <a href="#logo"><img src="./assets/img/top.png" alt="Go to top" class="to-top"></a>
   </footer>
 </body>
 </html> 

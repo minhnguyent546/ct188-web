@@ -1,12 +1,28 @@
+:root {
+
+}
+
+/* utilities */
+.text-justify {
+    text-align: justify;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* main */
+
 body {
     display: grid;
     margin: 0 auto;
     border: 1px;
     padding: 0 5px;
-    min-width: 1024px;
+    width: 1024px;
     font-size: 1.2em;
     font-family: "Helvetica", "Arial", sans-serif;
-    grid-template: 
+    grid-template-areas: 
         'header-cell'
         'nav-cell'
         'main-cell'
@@ -31,9 +47,6 @@ header {
 .header-img1 {
     height: 100px;
     top: -30px;
-    right: -30px;
-    bottom: -30px;
-    left: -30px;
     animation: headerImg1 3s linear forwards;
 }
 
@@ -49,9 +62,6 @@ header {
 .header-img2 {
     height: 70px;
     top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
     animation: headerImg2 3s linear forwards;
 }
 
@@ -67,9 +77,6 @@ header {
 .header-img3 {
     height: 80px;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     animation: headerImg3 3s linear forwards;
 }
 
@@ -162,6 +169,15 @@ main {
     grid-template-columns: 1fr 3fr 1fr;
 }
 
+main .location-icon {
+    position: relative;
+    top: 5px;
+    height: 16px;
+    padding: 4px 12px;
+    text-align: center;
+    background-color: #cddc39;
+}
+
 aside {
     margin: 2px;
     padding: 5px;
@@ -194,15 +210,14 @@ h1 {
     font-size: 28px;
 }
 
-h1:after {
+h1::after {
     content: "";
     display: inline-block;
     width: 200px;
     height: 3px;
     position: absolute;
-    top: 60%;
+    top: 100%;
     left: 50%;
-    margin: 12px 0 16px;
     transform: skewX(12deg) translateX(-50%);
     background-image: radial-gradient(#cddc39, #fff);
 }
@@ -318,6 +333,25 @@ article .product-item p {
     text-align: justify;
     margin-left: 4px;
     margin-right: 4px;
+}
+
+form table tr {
+    vertical-align: top;
+}
+
+main form table {
+    max-width: 500px;
+}
+
+main form .label-icon {
+    padding: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    width: 24px;
+    text-align: center;
+    background-color: #cddc39;
+    cursor: pointer;
 }
 
 footer {
