@@ -37,9 +37,11 @@
       </div>
 
       <div>
-        <input type="text" placeholder="Nhập nội dung cần tìm...">
-        <i class="nav-search-icon fa-solid fa-search"></i>
-        <i class="nav-cart-icon fa-solid fa-shopping-cart"></i>
+        <form action="timkiem.html" method="GET" class="search-form">
+          <input type="text" placeholder="Nhập nội dung cần tìm...">
+          <i class="search-btn nav-search-icon fa-solid fa-search" title="Tìm kiếm"></i>
+        </form>
+        <i class="nav-cart-icon fa-solid fa-shopping-cart" title="Đến trang đơn hàng"></i>
       </div>
     </nav>
   </header>
@@ -56,7 +58,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp001-btn" onclick="addCart('sp001')">Đặt hàng</button>
                 </span>
             </div>
 
@@ -67,7 +69,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp002-btn" onclick="addCart('sp002')">Đặt hàng</button>
                 </span>
             </div>
 
@@ -78,7 +80,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp003-btn" onclick="addCart('sp003')">Đặt hàng</button>
                 </span>
             </div>
         </section>
@@ -93,7 +95,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp004-btn" onclick="addCart('sp004')">Đặt hàng</button>
                 </span>
             </div>
 
@@ -104,7 +106,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp005-btn" onclick="addCart('sp005')">Đặt hàng</button>
                 </span>
             </div>
 
@@ -115,7 +117,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp006-btn" onclick="addCart('sp006')">Đặt hàng</button>
                 </span>
             </div>
         </section>
@@ -130,7 +132,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp007-btn" onclick="addCart('sp007')">Đặt hàng</button>
                 </span>
             </div>
 
@@ -141,7 +143,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp008-btn" onclick="addCart('sp008')">Đặt hàng</button>
                 </span>
             </div>
 
@@ -152,7 +154,7 @@
                 <span>
                     Số lượng
                     <input type="number" min="0" max="100" value="0" size="3">
-                    <button>Đặt hàng</button>
+                    <button class="sp009-btn" onclick="addCart('sp009')">Đặt hàng</button>
                 </span>
             </div>
     </article>
@@ -167,5 +169,7 @@
     </p>
     <a href="#logo"><img src="./assets/img/top.png" alt="Go to top" class="to-top"></a>
   </footer>
+
+  <script src="./assets/js/main.js"></script>
 </body>
 </html> 

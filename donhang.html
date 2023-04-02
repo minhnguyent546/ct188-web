@@ -15,7 +15,7 @@
 
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css">
-  <title>Liên hệ</title>
+  <title>Đơn hàng</title>
 </head>
 <body>  
   <header>
@@ -44,74 +44,52 @@
         <i class="nav-cart-icon fa-solid fa-shopping-cart" title="Đến trang đơn hàng"></i>
       </div>
     </nav>
+
   </header>
 
-  <main class="main-one-col">
-    <h1>Liên hệ</h1>
-    <p>
-      <img src="./assets/img/lienhe/check-in.png" alt="Check in" class="location-icon">
-      <strong>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</strong>
-      Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn.
-    </p>
+  <main class=main-one-col>
+    <h1>Chi tiết đơn hàng</h1>
 
-    <h1>Góp ý</h1>
-    <form action="" method="post" enctype="application/x-www-form-urlencoded" class="contact-form">
-      <table class="mx-auto">
+    <table class="order-table">
+      <thead>
         <tr>
-          <td>
-            <label for="name">
-              <span class="label-icon"><i class="fa-regular fa-user"></i></span>
-            </label>
-          </td>
-          <td>
-            <input type="text" name="name" id="name" placeholder="Vui lòng nhập họ tên của bạn">
-          </td>
+          <th>Hình SP</th>
+          <th>Tên SP</th>
+          <th>Số lượng</th>
+          <th>Giá</th>
+          <th>Thành tiền</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="100%">Tổng thành tiền (A) = <span class="total-cost">0đ</span></td>
+        </tr>
+
+        <tr>  
+          <td colspan="100%">Chiết khấu (B) = 0.1 x A = <span class="discount">0đ</span></td>
         </tr>
 
         <tr>
-          <td>
-            <label for="email">
-              <span class="label-icon"><i class="fa-regular fa-envelope"></i></span>
-            </label>
-          </td>
-          <td>
-            <input type="text" name="email" id="email" placeholder="Vui lòng nhập địa chỉ email">
-          </td>
+          <td colspan="100%">Thuế (C) = 10% x (A - B) = <span class="tax">0đ</span></td>  
+        </tr>
+
+        <tr>  
+          <td colspan="100%">Tổng đơn hàng = A - B + C = <span class="total-order-cost">0đ</span></td>
         </tr>
 
         <tr>
-          <td>
-            <label for="concept">
-              <span class="label-icon"><i class="fa-solid fa-list-ul"></i></span>
-            </label>
-          </td>
-          <td>
-            <select name="concept" id="concept" size="1">
-              <option value="option-1">Về Sản phẩm/ Dịch vụ</option>
-              <option value="option-2">Về Ưu đãi thành viên</option>
-              <option value="option-3">Về Tin Tuyển Dụng</option>
-            </select>
+          <td colspan="100%">
+            <input type="button" value="Xác nhận đơn hàng">  
           </td>
         </tr>
-
-        <tr>
-          <td>
-            <label for="content">
-              <span class="label-icon"><i class="fa-regular fa-note-sticky"></i></span>
-            </label>
-          </td>
-          <td colspan="2">
-            <textarea name="content" id="content" cols="50" rows="7" placeholder="Nội dung cần liên hệ"></textarea>
-          </td>
-        </tr>
-
-        <tr>
-          <td colspan="2" style="text-align: center;">
-            <input type="submit" value="Gửi">
-          </td>
-        </tr>
-      </table>
-    </form>
+      </tfoot>
+    </table>
   </main>
 
   <footer>

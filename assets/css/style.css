@@ -3,8 +3,16 @@
 }
 
 /* utilities */
+.text-right {
+    text-align: right;
+}
+
 .text-justify {
     text-align: justify;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .mx-auto {
@@ -98,7 +106,18 @@ nav {
 
 nav div:last-child {
     margin-top: 3px;
+    display: flex;
+    align-items: center;
 }
+
+nav .search-form {
+    margin-right: 4px;
+}
+
+nav .search-form input {
+    width: 150px;
+}
+
 
 nav a {
     margin: 3px;
@@ -122,7 +141,8 @@ nav a:hover {
 }
 
 .nav-search-icon,
-.nav-cart-icon {
+.nav-cart-icon,
+.order-table td .clear-icon {
     padding: 4px;
     min-width: 30px;
     text-align: center;
@@ -134,7 +154,8 @@ nav a:hover {
     color: #fff;
 }
 
-.nav-cart-icon {
+.nav-cart-icon,
+.order-table td .clear-icon {
     color: #ed4190;
 }
 
@@ -352,6 +373,51 @@ main form .label-icon {
     text-align: center;
     background-color: #cddc39;
     cursor: pointer;
+}
+
+.order-table {
+    border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+    border: 1px solid #000;
+}
+
+.order-table tbody td:nth-child(1) {
+    text-align: center;
+}
+
+.order-table tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.order-table tbody td:nth-child(3) {
+    text-align: right;
+}
+
+.order-table tbody td:nth-child(4) {
+    text-align: right;
+}
+
+.order-table tbody td:nth-child(5) {
+    text-align: right;
+}
+
+.order-table tbody td:nth-child(6) {
+    text-align: center;
+}
+
+.order-table tfoot tr {
+    text-align: right;
+}
+
+.order-table tfoot tr:last-child {
+    text-align: center;
+}
+
+.order-table td .clear-icon {
+
 }
 
 footer {
